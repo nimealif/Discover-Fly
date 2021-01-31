@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover-Fly</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+                      <!-- work on navbar section -->
+
+
+    <header id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end pl-5" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item pl-2">
+                    <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item pl-2">
+                    <a class="nav-link active text-light" href="#">ABOUT US</a>
+                  </li>
+                  <li class="nav-item pl-2">
+                    <a class="nav-link active text-light" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item pl-2">
+                    <a class="nav-link active btn bg-primary text-light" href="#" tabindex="-1" aria-disabled="false">SIGN UP</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+
+    <main>
+        <section class="container">
+           <div id="booking">
+            <div class="row">
+             <div class="col-md-5 form-side">
+                <h4 class="head-line">Booking Flights</h4>
+                <h5>Flying From</h5>
+                <input type="text" class="form-control" name="" id="flyingFrom" placeholder="Dhaka, Bangladesh">
+                <h5>Flying To</h5>
+                <input type="text" class="form-control" name="" id="flyingTo" placeholder="New York, United States">  
+                    
+                         <!-- working on date section -->
+                     <div class="row date mt-3">
+                      <div class="col-md-6">
+                            <h5>Departure:</h5>
+                            <input type="date" id="departure" value="">
+                         </div>
+                        <div class="col-md-6">
+                            <h5>Return:</h5>
+                             <input type="date" id="return" value="">
+                            </div>
+                    </div>  
+                      
+                <h5 class="mt-4">First Class <span >$150</span></h5>
+                <div class="firstClass d-flex">
+                  <input type="number" value="0" class="form-control" name="" id="vip-count">
+                  <button id="addVipTiceket" class="btn btn-default"><i  style="color:  #007bff;" class="fas fa-plus"></i></button>
+                  <button id="removeVipTiceket" class="btn btn-default"><i  style="color:  #007bff;" class="fas fa-minus"></i></button>
+                </div>
+                
+                         
+                          
+                <h5 class="mt-4">Economy <span >$100</span></h5>
+                <div class="economyClass d-flex">
+                  <input type="number" value="0"  class="form-control" name="" id="eco-count">
+                  <button id="addEconomy" class="btn btn-default"><i style="color:  #007bff;" class="fas fa-plus"></i></button>
+                  <button id="removeEconomy" class="btn btn-default"><i  style="color:  #007bff;" class="fas fa-minus"></i></button>
+                </div>
+
+                <div class="sub-total mt-3 d-flex justify-content-between">
+                  <h5>Subtotal</h5>
+                  <h5>$<span id="sub-total">00</span></h5>
+
+                </div>
+
+                <div class="sub-total mt-3 d-flex justify-content-between">
+                  <h5>Charge 10% VAT</h5>
+                  <h5>$<span id="vatDisplay">00</span></h5>
+                </div>
+                <hr>
+                <div class="total mt-3 d-flex justify-content-between">
+                  <h5>total</h5>
+                  <h5>$<span id="totalDisplay">00</span></h5>
+                </div>
+
+                <button id="bookingBtn" class="btn btn-primary book mt-3 ml-3">Book Now</button>
+                
+
+                    
+                        
+             </div>
+
+                <div class="col-md-7 details-right">
+
+
+
+                  <div class="hightlight-Word">
+                    <h1 class="word-gap text-white">DISCOVER</h1>
+                  <h1 class="word-gap text-white">AROUND THE</h1>
+                  <h1 class="word-gap text-white">WORLD</h1>
+                  </div>
+
+
+
+                    <p class="details text-white">Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+                </div>
+
+                    </div>
+
+                </div>
+            </div>
+           </div>
+
+        </section>
+
+        <section>
+          <div id="pop-up">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="text-center text-info mt-5">Congratulation <br> Booking Confirmed</h2>
+                  <div class="d-flex justify-content-between mt-3">
+                    <h4>Flying From:</h4>
+                    <h4><span id="flyingFromPlace">Location</span></h4>
+                  </div>
+                    <div class=" d-flex justify-content-between">
+                      <h4>Flying To:</h4>
+                    <h4><span id="flyingToPlace">Location</span></h4>
+                    </div>
+                  <div class=" d-flex justify-content-between">
+                    <h4>Departure Date:</h4>
+                    <h4><span id="departuredDate">date</span></h4>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h4>Return Date:</h4>
+                    <h4><span id="returnDisplay" >date</span></h4>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <h4>First Class:</h4>
+                    <h4>$<span id="vip-price">00</span></h4>
+                  </div>
+                  <div class=" d-flex justify-content-between">
+                    <h4>Economy Class:</h4>
+                    <h4>$<span id="eco-price">00</span></h4>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h4>Charge 10% VAT:</h4>
+                    <h4>$<span id="vatDisplayed">00</span></h4>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h4>total price:</h4>
+                    <h4>$<span id="totalPayment">00</span></h4>
+                  </div>
+                  
+                  
+                  </div>
+                
+                <div class="col-md-6 mt-2">
+                  <img src="images/popUp.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

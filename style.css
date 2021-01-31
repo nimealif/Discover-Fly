@@ -1,0 +1,74 @@
+body{
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#booking{
+    display:block;
+}
+#navbar{
+    display:block;
+
+}
+
+.head-line{
+    font-weight: 700;
+}
+
+.form-side{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 10px;
+    
+    
+}
+ a:hover{
+    background-color: #007bff;  
+    border-radius: 10px;  
+    
+}
+
+
+
+.hightlight-Word{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.word-gap{
+    margin-top: 10px;
+    font-size:60px;
+}
+
+
+.book{
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+
+
+.details{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#pop-up{
+    display: none;
+    background-color: white;
+    box-shadow: 20px 20px;
+    height: 700px;
+  
+}
+#pop-up img{
+    width: 100%;
+    border-radius: 10px;
+     
+}
